@@ -11,7 +11,7 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
           <source>1.5</source>
-         <target>1.5</target>
+        <target>1.5</target>
         </configuration>
       </plugin>
       <plugin>
@@ -30,4 +30,11 @@
       </plugin>
     </plugins>
   </build>
+    <dependencies>
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>jstl</artifactId>
+        <version>1.2</version>
+      </dependency>
+    </dependencies>
 </project>
