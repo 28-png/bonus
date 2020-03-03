@@ -8,9 +8,10 @@ import java.util.List;
 
 @WebServlet("/items")
 public class ItemsServlet extends HttpServlet {
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
         Items productsDao = DaoFactory.getItemsDao();
-        List<Item> items = productsDao.all();
+       List<Item> items = productsDao.all();
         request.setAttribute("items", items);
         request.getRequestDispatcher("/index.jsp").forward(request, resp);
     }
