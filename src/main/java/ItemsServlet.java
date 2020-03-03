@@ -13,7 +13,7 @@ public class ItemsServlet extends HttpServlet {
         Items productsDao = DaoFactory.getItemsDao();
        List<Item> items = productsDao.all();
         request.setAttribute("items", items);
-        request.getRequestDispatcher("/index.jsp").forward(request, resp);
+        request.getRequestDispatcher("/items/index.jsp").forward(request, resp);
     }
 
 }
